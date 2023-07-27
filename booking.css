@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Gloock&family=Herr+Von+Muellerhoff&family=Jost:wght@100;200;300;400&family=Montserrat:wght@100;200;300;400&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Gloock', serif;
+font-family: 'Herr Von Muellerhoff', cursive;
+font-family: 'Jost', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+:root {
+    --primary-color: #1a191b;
+    --main-color: rgba(255, 196, 0, 0.76);
+    --back-color:#191a19;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body {
+    background: black;
+}
+/* ========================================= */
+.header-content1{
+    width: 100%;
+    height: 80vh;
+    background-image: url(images/image-41.jpeg);
+}
+.back{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back .heading2{
+    padding: 20px;
+}
+/* =============================booking style start */
+.booking{
+    width: 100%;
+    height: auto;
+    padding: 50px 3%;
+}
+.booking-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.booking-box{
+    width: 50%;
+    height: auto;
+}
+.booking-box1{
+    width: 40%;
+}
+.booking-box2{
+    width: 60%;
+    padding: 0 50px;
+}
+.booking-box2 form label,input{
+    display: block;
+}
+.booking-box2 form label{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 2px;
+    padding: 10px 0;
+}
+.booking-box2 form input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffffff3e;
+    background: transparent;
+    font-size: 17px;
+    color: #ffffff92;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 2px;
+    padding: 10px 10px;
+}
+.booking-box2 form textarea{
+    width: 100%;
+    border: 1px solid #ffffff3e;
+    background: transparent;
+    font-size: 17px;
+    color: #ffffff92;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 3px;
+    padding: 20px;
+}
+.booking-box2 form button{
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 20px 0;
+    font-family: 'Jost', sans-serif;
+    cursor: pointer;
+    border: 1px solid #ffffff3e;
+    letter-spacing: 2px;
+}
+.booking-box2 form button:hover{
+    background: transparent;
+    border: 1px solid #ffffff3e;
+    color: #fff;
+}
+.booking-box1 p{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: #ffffff73;
+    line-height: 30px;
+}
+.booking-box1 h4{
+    color: #fff;
+    font-size: 15px;
+    padding: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+}

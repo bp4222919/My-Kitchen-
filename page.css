@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Gloock&family=Herr+Von+Muellerhoff&family=Jost:wght@100;200;300;400&family=Montserrat:wght@100;200;300;400&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Gloock', serif;
+font-family: 'Herr Von Muellerhoff', cursive;
+font-family: 'Jost', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+:root {
+    --primary-color: #1a191b;
+    --main-color: rgba(255, 196, 0, 0.76);
+    --back-color:#191a19;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .3s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body {
+    background: black;
+}
+/* ===================================== */
+.header-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.header-content h1{
+    color: #ffffff;
+    font-size: 60px;
+    font-family: 'Open Sans', sans-serif;
+}
+.header-content h3{
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 100px;
+    padding: 10px;
+}
+.header-content p{
+    color: #ffffff;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.header-content p span{
+    font-size: 60px;
+    color: #fff;
+    line-height: 100px;
+    font-weight: 100;
+}
+/* ============================================================ */
+.page{
+    width: 100%;
+    height: auto;
+    background-image: url(images/image-41.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.page-div{
+    width: 50%;
+    height:auto;
+    padding: 100px;
+    background: rgba(0, 0, 0, 0.7);
+    
+}
+.page-div h3{
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.page-div h1{
+    color: #ffffff;
+    font-size: 50px;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+.page-div p{
+    color: #ffffff;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.page-div a button{
+    margin: 0;
+    margin-top: 70px;
+}
+/* ======================================================== */
+.page2{
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+}
+.page2-background{
+    width: 100%;
+    height: auto;
+    background-image: url(images/image-42.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.page2 p{
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: 200;
+}
+.page2-div{
+    width: 100%;
+    height: auto;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+
+}
+.page2-div h4{
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.page2-div h1{
+    color: #ffffff;
+    font-size: 100px;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+/* ==============================================page3 */
+.page3{
+    width: 100%;
+    height: auto;
+    padding: 100px;
+}
+.page3 h4{
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.page3 p{
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: 200;
+}
+.page-div3{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+.page-div3-box{
+    height: 200px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    overflow: hidden;
+    margin: auto;
+}
+.page-div3-box img{
+    width: 100%;
+    height: 100%;
+}
+.page-div3-box:hover img{
+    transform: scale(1.2);
+}
+.page3 h3{
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    padding: 10px 0;
+    padding-top: 100px;
+}
+.page3 .heading1{
+    font-weight: 200;
+}
+.page3 ion-icon{
+    font-size: 40px;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

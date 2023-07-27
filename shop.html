@@ -1,0 +1,414 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop.com</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="shop.css">
+
+  <link rel="stylesheet" href="madia-qurey.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+    integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!--================================header section start==========================-->
+  <section class="header" id="header">
+    <nav class="navbar navbar_top" id="navbar">
+      <div class="links" id="link">
+        <a href="#"><ion-icon name="location"></ion-icon>317 Pacific
+          C HwyHuntington, CA 92648</a>
+        <a href="#"><ion-icon name="phone-portrait"></ion-icon>1800-99-1800</a>
+        <a href="#"><ion-icon name="mail"></ion-icon>mykitchen1800@gmail.com</a>
+      </div>
+      <div class="icon">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </div>
+    </nav>
+    <nav class="navbar" id="navbar_main">
+      <div class="logo">
+        <a href="index.html">
+          <h1>MY Kitchen</h1>
+        </a>
+      </div>
+      <div class="links" id="links">
+        <a href="http://127.0.0.1:5501/index.html">Home</a>
+        <a href="http://127.0.0.1:5501/about.html">About</a>
+        <a href="http://127.0.0.1:5501/menu.html">Menus</a>
+        <a href="http://127.0.0.1:5501/page.html">Pages</a>
+        <a href="http://127.0.0.1:5501/shop.html">Shop</a>
+        <a href="http://127.0.0.1:5501/contact.html">Contact</a>
+      </div>
+      <div class="icon" id="icon">
+        <span class="openbtn" onclick="openNav()" style="z-index: 99999;">&#9776;</span>
+      </div>
+    </nav>
+    <div class="main_header" id="main_header">
+      <div class="main-sidebar" id="main-sidebar"></div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">&times;</a>
+        <a href="http://127.0.0.1:5501/index.html">Home</a>
+        <a href="http://127.0.0.1:5501/about.html">About</a>
+        <a href="http://127.0.0.1:5501/menu.html">Menus</a>
+        <a href="http://127.0.0.1:5501/page.html">Pages</a>
+        <a href="http://127.0.0.1:5501/shop.html">Shop</a>
+        <a href="http://127.0.0.1:5501/contact.html">Contact</a>
+        <ion-icon name="logo-facebook" class="facebook"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-pinterest"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="medical"></ion-icon>
+        <hr class="line">
+        <div class="mySidenav_links">
+          <a href="#"><ion-icon name="location"></ion-icon>317 Pacific C HwyHuntington, CA 92648</a>
+          <a href="#"><ion-icon name="phone-portrait"></ion-icon>1800-99-1800</a>
+          <a href="#"><ion-icon name="mail"></ion-icon>mykitchen1800@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-content">
+      <h2 class="heading2">TASTE THE LOVE</h2>
+      <h1>Soul Kitchen in Your Fridge</h1>
+      <p>Our asian specialities from Ramen to Miso Beef are prepared in our kitchen with only the best ingredients
+        and filled into containers. They can be stored in the fridge for up to 3 months.</p>
+
+      <button class="btn2">GO TO SHOP</button>
+    </div>
+  </section>
+  <!--==============================================header section end===========================-->
+  <!-- ================================================cart section start========================== -->
+  <section class="cart" id="cart">
+    <div class="cart-container">
+      <div class="cart-box">
+        <div class="card-box-content">
+          <center>
+            <h1>Soul Kitchen To Go</h1>
+            <button class="btn2">DESCOVER</button>
+          </center>
+        </div>
+      </div>
+      <div class="cart-box">
+        <div class="card-box-content">
+          <center>
+            <h1>Taste the Difference</h1>
+            <button class="btn2">ONEP TO JAR</button>
+          </center>
+        </div>
+      </div>
+      <div class="cart-box">
+        <div class="card-box-content">
+          <center>
+            <h1>The gift for food lovers</h1>
+            <button class="btn2">BUY GIFT CARD</button>
+          </center>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ================================================cart section End========================== -->
+  <!-- =============================================blog section start============================= -->
+  <section class="blog" id="blog">
+    <h3 class="heading2"> TAKE OUT, GIFT CARDS & MORE</h3>
+    <h1 class="heading3" style="padding-top: 20px;">Soul Kitchen in Your Fridge<br>|</h1>
+    <div class="blog-container">
+      <div class="blog-box">
+        <div class="image">
+          <img src="images/image-43.jpg">
+        </div>
+        <center>
+          <h2>DARK SOY SAUCE<br>$8.00</h2>
+          <button>add to cart</button>
+        </center>
+      </div>
+      <div class="blog-box">
+        <div class="image">
+          <img src="images/image-44.jpg">
+        </div>
+        <center>
+          <h2>FIVE SPICES POWDER (WU XIANG FEN)<br>$7.00</h2>
+          <button>add to cart</button>
+        </center>
+      </div>
+      <div class="blog-box">
+        <div class="image">
+          <img src="images/image-45.jpg">
+        </div>
+        <center>
+          <h2>VEGETARIAN BAOS<br>$8.00</h2>
+          <button>add to cart</button>
+        </center>
+      </div>
+      <div class="blog-box">
+        <div class="image">
+          <img src="images/image-46.jpg">
+        </div>
+        <center>
+          <h2>VEGETARIAN BAOS<br>$8.00</h2>
+          <button>add to cart</button>
+        </center>
+      </div>
+      <div class="blog-box">
+        <div class="image">
+          <img src="images/image-47.jpg">
+        </div>
+        <center>
+          <h2>VEGETARIAN BAOS<br>$8.00</h2>
+          <button>add to cart</button>
+        </center>
+      </div>
+      <div class="blog-box">
+        <div class="image">
+          <img src="images/image-48.jpg">
+        </div>
+        <center>
+          <h2>VEGETARIAN BAOS<br>$8.00</h2>
+          <button>add to cart</button>
+        </center>
+      </div>
+      <div class="blog-box">
+        <div class="image">
+          <img src="images/image-11.jpg">
+        </div>
+        <center>
+          <h2>VEGETARIAN BAOS<br>$8.00</h2>
+          <button>add to cart</button>
+        </center>
+      </div>
+      <div class="blog-box">
+        <div class="image">
+          <img src="images/image-51.jpg">
+        </div>
+        <center>
+          <h2>VEGETARIAN BAOS<br>$8.00</h2>
+          <button>add to cart</button>
+        </center>
+      </div>
+    </div>
+    <center><button class="btn">Go to shop</button></center>
+  </section>
+  <!-- =============================================blog section end============================= -->
+  <!-- ===========================================Powder Section start=============================== -->
+  <section class="powder" id="powed">
+    <div class="powder-container">
+      <div class="powder-box">
+
+      </div>
+      <div class="powder-box">
+        <h2 class="heading2">NEW IN</h2>
+        <h1 class="heading3">Soul Kitchen Five Spices Powder</h1>
+        <p>Five Spice Powder is based on ancient Chinese lore that the universe is composed of five elements – wood,
+          metal, water, fire and earth.<br><br>
+
+          Ingredients of Five Spice Powder represent those five elements, balanced in the harmonious melding of five
+          flavors – sweet, sour, bitter, pungent and salty.</p>
+
+          <button class="btn2">SHOP NOW</button>
+      </div>
+    </div>
+  </section>
+  <!-- ===========================================Powdersection End=============================== -->
+<!-- ============================================contact Section Start============================= -->
+<section class="email" id="email">
+  <div class="email-container">
+    <center>
+      <h1 class="heading3">Keep Up to Date with Soul Kitchen</h1>
+      <p>Sign up to be the first to receive special news and event updates from SoulKitchen.</p>
+      <form>
+        <input type="text" placeholder="Enter Email"><br>
+        <button class="btn2">SING UP</button>
+      </form>
+    </center>
+  </div>
+</section>
+<!-- ============================================contact Section End============================= -->
+<!-- ===========================================Footer Sectiont Start============================= -->
+<section class="footer" id="footer">
+  <div class="footer-container">
+    <div class="footer-box">
+      <center>
+        <h1>WELCOME TO SOUL KITCHEN</h1>
+
+        <p>SOUL KITCHEN, founded in 2022, is dedicated to all those who love to wander far and wide.<br><br>
+          We'd like to invite you on a culinary adventure, where you’ll explore undiscovered gourmet experiences.</p>
+      </center>
+    </div>
+    <div class="footer-box">
+      <center>
+        <h1>VISIT</h1>
+        <p><ion-icon name="location"></ion-icon> 317 Pacific C Hwy<br>
+          Huntington, CA 92648</p>
+        <h1>TALK</h1>
+        <p><ion-icon name="phone-portrait"></ion-icon>123.456-7</p>
+        <h1>WRITE</h1>
+        <p><ion-icon name="mail"></ion-icon> mykitchen1800@gmail.com</p>
+      </center>
+    </div>
+    <div class="footer-box">
+      <center>
+        <h1>RESERVATIONS</h1>
+        <a href="http://127.0.0.1:5500/booking.html"><button class="btn">BOOK A TABLE</button></a>
+        <h1>HOURS</h1>
+        <p>MONDAY thru FRIDAY<br>
+          11am - 9pm<br>
+          <br>
+          SATURDAY/SUNDAY<br>
+          10am - 11pm
+        </p>
+      </center>
+    </div>
+    <div class="footer-box">
+      <center>
+        <h1>ABOUT</h1>
+        <ul>
+          <li>FAQ</li>
+          <li>Reservation Policy</li>
+          <li>Privacy Policy</li>
+          <li>Health & Safety</li>
+        </ul>
+        <h1>FOLLOW ALONG</h1>
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </center>
+    </div>
+  </div>
+</section>
+<!-- ===========================================Footer Sectiont End============================= -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="myscript.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <!-- Swiper JS -->
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper1", {
+      spaceBetween: 30,
+      effect: "fade",
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="menu.css">
+
+    <link rel="stylesheet" href="madia-qurey.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+        integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+</head>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!--================================header section start==========================-->
+    <section class="header" id="header">
+        <nav class="navbar navbar_top" id="navbar">
+            <div class="links" id="link">
+                <a href="#"><ion-icon name="location"></ion-icon>317 Pacific C HwyHuntington, CA 92648</a>
+                <a href="#"><ion-icon name="phone-portrait"></ion-icon>1800-99-1800</a>
+                <a href="#"><ion-icon name="mail"></ion-icon>mykitchen1800@gmail.com</a>
+            </div>
+            <div class="icon">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+        </nav>
+        <nav class="navbar" id="navbar_main">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>MY Kitchen</h1>
+                </a>
+            </div>
+            <div class="links" id="links">
+                <a href="http://127.0.0.1:5501/index.html">Home</a>
+                <a href="http://127.0.0.1:5501/about.html">About</a>
+                <a href="http://127.0.0.1:5501/menu.html">Menus</a>
+                <a href="http://127.0.0.1:5501/page.html">Pages</a>
+                <a href="http://127.0.0.1:5501/shop.html">Shop</a>
+                <a href="http://127.0.0.1:5501/contact.html">Contact</a>
+                <div class="icon">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </div>
+            </div>
+            <div class="icon" id="icon">
+                <span class="openbtn" onclick="openNav()" style="z-index: 99999;">&#9776;</span>
+            </div>
+        </nav>
+        <div class="main_header" id="main_header">
+            <div class="main-sidebar" id="main-sidebar"></div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">&times;</a>
+                <a href="http://127.0.0.1:5501/index.html">Home</a>
+                <a href="http://127.0.0.1:5501/about.html">About</a>
+                <a href="http://127.0.0.1:5501/manu.html">Menus</a>
+                <a href="http://127.0.0.1:5501/page.html">Pages</a>
+                <a href="http://127.0.0.1:5501/shop.html">Shop</a>
+                <a href="http://127.0.0.1:5501/contact.html">Contact</a>
+                <ion-icon name="logo-facebook" class="facebook"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-pinterest"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="medical"></ion-icon>
+                <hr class="line">
+                <div class="mySidenav_links">
+                    <a href="#"><ion-icon name="location"></ion-icon>317 Pacific C HwyHuntington, CA 92648</a>
+                    <a href="#"><ion-icon name="phone-portrait"></ion-icon>1800-99-1800</a>
+                    <a href="#"><ion-icon name="mail"></ion-icon>mykitchen1800@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-content">
+            <div class="box">
+                <center>
+                    <h2 class="heading2">A LA CARTE</h2>
+                    <h1 class="heading1">Menu</h1>
+                    <p class="par" style="padding: 20px;color: #ffffff9b;line-height: 25px;">We are passionate about
+                        sourcing fresh ingredients, combining with traditional
+                        flavors and continually evolving our menu to create a dinging experience that is truly unique.
+                    </p>
+                </center>
+            </div>
+            <div class="box box1">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/image-1.jpeg"></div>
+                        <div class="swiper-slide"><img src="images/image-27.jpeg"></div>
+                        <div class="swiper-slide"><img src="images/image-25.jpeg"></div>
+                        <div class="swiper-slide"><img src="images/image-22.jpeg"></div>
+                        <div class="swiper-slide"><img src="images/image-24.jpeg"></div>
+                    </div>
+                    <div class="swiper-button-next mybtn"></div>
+                    <div class="swiper-button-prev mybtn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================================header section end====================================-->
+    <!-- ================================================Menu Section Start==================================== -->
+    <section class="card" id="card" style="padding-top: 100px;">
+        <center>
+            <h1 class="heading11" style="letter-spacing: 5px;">SMALL BITES</h1>
+            <p class="text2">for the table and spread the love.</p>
+        </center>
+        <div class="card-container">
+            <div class="card-box">
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Green papaya salad</h2>
+                        <p class="text">shrimp, chili & lime</p>
+                    </div>
+                    <div class="cont">
+                        <p>12</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Shishito Peppers</h2>
+                        <p class="text">Yuzu, sesame</p>
+                    </div>
+                    <div class="cont">
+                        <p>15</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Caramelised betel leaf</h2>
+                        <p class="text">Pineapple, Chili</p>
+                    </div>
+                    <div class="cont">
+                        <p>9</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-box">
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Black pepper calamari</h2>
+                        <p class="text">Galangal dressing, roasted rice, thai basil</p>
+                    </div>
+                    <div class="cont">
+                        <p>14</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Pacific oysters (price per piece)</h2>
+                        <p class="text">Ponzu, sriracha</p>
+                    </div>
+                    <div class="cont">
+                        <p>5</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Edamame</h2>
+                        <p class="text">maldon sea salt</p>
+                    </div>
+                    <div class="cont">
+                        <p>8</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-box">
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Tumeric spiced cauliflower</h2>
+                        <p class="text">Sesame tofu dressing, furikake</p>
+                    </div>
+                    <div class="cont">
+                        <p>11</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Kingfish sashimi</h2>
+                        <p class="text">Green nam jim, coconut & thai basil</p>
+                    </div>
+                    <div class="cont">
+                        <p>15</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Thai chicken lettuce cups</h2>
+                        <p class="text">Chilis, thai basil, crispy garlic, fried egg</p>
+                    </div>
+                    <div class="cont">
+                        <p>13</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================================================Menu Section End====================================== -->
+    <!-- ===================================================Menu Gallery Section Start =============================-->
+    <section class="menu-gallery">
+        <div class="gallery-container">
+            <div class="gallery-img gallery-img1">
+                <div class="hover">
+                    <h2>Tempeh Buns</h2>
+                </div>
+            </div>
+            <div class="gallery-img gallery-img2">
+                <div class="hover">
+                    <h2>Watermelon Salad</h2>
+                </div>
+            </div>
+            <div class="gallery-img gallery-img3">
+                <div class="hover">
+                    <h2>Barbecues Scallops</h2>
+                </div>
+            </div>
+            <div class="gallery-img gallery-img4">
+                <div class="hover">
+                    <h2>Citrus Fruit Salad</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================================================Menu Gallery Section End== =============================-->
+    <!-- ================================================Menu Section Start==================================== -->
+    <section class="card" id="card" style="padding-top: 100px;padding-bottom: 0;">
+        <center>
+            <h1 class="heading11" style="letter-spacing: 5px;">THE LAND<br>|</h1>
+        </center>
+        <div class="card-container">
+            <div class="card-box">
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Ribeye Bites Roasted</h2>
+                        <p class="text">Shishito Peppers, Jalapeño Crème</p>
+                    </div>
+                    <div class="cont">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Fried Chicken bun</h2>
+                        <p class="text">Gochujang, pickled radis</p>
+                    </div>
+                    <div class="cont">
+                        <p>11</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Grilled Pork Chop</h2>
+                        <p class="text">Vietnamese slaw, cashew & shrimp sambal</p>
+                    </div>
+                    <div class="cont">
+                        <p>12</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-box">
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Buddha's Feast</h2>
+                        <p class="text">Five-spice tofu, savory sauce, green beans, shiitakes, broccoli, carrots</p>
+                    </div>
+                    <div class="cont">
+                        <p>14</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Crispy Pork Bun</h2>
+                        <p class="text">House made kimchi, sriracha mayo</p>
+                    </div>
+                    <div class="cont">
+                        <p>14</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-box">
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Stir fried Eggplant</h2>
+                        <p class="text">Chinese eggplant, sweet chili soy glaze, green onion, garlic</p>
+                    </div>
+                    <div class="cont">
+                        <p>12</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Wagyu ribeye teppanyaki</h2>
+                        <p class="text">Snow peas, shimeji mushrooms</p>
+                    </div>
+                    <div class="cont">
+                        <p>28</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================================================Menu Section End====================================== -->
+    <!-- ================================================Menu Section Start==================================== -->
+    <section class="card" id="card" style="padding: 0px 3%;">
+        <center>
+            <h1 class="heading11" style="letter-spacing: 5px;">THE SEA<br>|</h1>
+        </center>
+        <div class="card-container">
+            <div class="card-box">
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Blackened Fish Sandwich</h2>
+                        <p class="text">Crunchy cabbage, wild baby arugula, tomato, house made tartar sauce, on a
+                            brioche bun</p>
+                    </div>
+                    <div class="cont">
+                        <p>9</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Honey Glazed Salmon</h2>
+                        <p class="text">Honey Glazed Salmon</p>
+                    </div>
+                    <div class="cont">
+                        <p>18</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-box">
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Hanoi Style Whole Market Fish</h2>
+                        <p class="text">Whole fish, sweet chilli sauce, Vietnamese herbs and spices, roasted cashews</p>
+                    </div>
+                    <div class="cont">
+                        <p>14</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Charred Seabass</h2>
+                        <p class="text">Orange glazed chicory, saffron rice, pepper sauce</p>
+                    </div>
+                    <div class="cont">
+                        <p>17</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-box">
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Stir fried Eggplant</h2>
+                        <p class="text">Chinese eggplant, sweet chili soy glaze, green onion, garlic</p>
+                    </div>
+                    <div class="cont">
+                        <p>12</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Wagyu ribeye teppanyaki</h2>
+                        <p class="text">Snow peas, shimeji mushrooms</p>
+                    </div>
+                    <div class="cont">
+                        <p>28</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================================================Menu Section End====================================== -->
+    <!-- ================================================Menu Section Start==================================== -->
+    <section class="card" id="card" style="padding: 0px 3%;">
+        <center>
+            <h1 class="heading11" style="letter-spacing: 5px;">THE SKY<br>|</h1>
+        </center>
+        <div class="card-container">
+            <div class="card-box">
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Sesame Chicken</h2>
+                        <p class="text">Chinese eggplant, sweet chili soy glaze, green onion, pineapple, ginger</p>
+                    </div>
+                    <div class="cont">
+                        <p>18</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Peking Duck</h2>
+                        <p class="text">For Two</p>
+                    </div>
+                    <div class="cont">
+                        <p>36</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Drunken Chicken</h2>
+                        <p class="text">Shao xing wine, shiitake mushrooms, broccoli, carrots, green onion dressing</p>
+                    </div>
+                    <div class="cont">
+                        <p>22</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-box">
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Crispy Orange Chicken</h2>
+                        <p class="text">Steamed bok choy</p>
+                    </div>
+                    <div class="cont">
+                        <p>24</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Black Pepper Chili Chicken</h2>
+                        <p class="text">Pepper, onion, bamboo shoot, celery</p>
+                    </div>
+                    <div class="cont">
+                        <p>14</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Free-Range Chicken Breast</h2>
+                        <p class="text">Ichimi glaze, shishito potato mash, green onion, garlic</p>
+                    </div>
+                    <div class="cont">
+                        <p>16</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-box">
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Chicken Wings </h2>
+                        <p class="text">Thai basil, chili, peanuts, green papaya, cilantro</p>
+                    </div>
+                    <div class="cont">
+                        <p>12</p>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <h2 class="heading5">Chili & pepper spiced duck</h2>
+                        <p class="text">Green beans, shiitakes, broccoli, carrots, plum & ginger dressing</p>
+                    </div>
+                    <div class="cont">
+                        <p>26</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================================================Menu Section End====================================== -->
+    <!-- ===================================================Menu Gallery Section Start =============================-->
+    <section class="menu-gallery">
+        <div class="gallery-container">
+            <div class="gallery-img gallery-img5">
+                <div class="hover">
+                    <h2>Tempeh Buns</h2>
+                </div>
+            </div>
+            <div class="gallery-img gallery-img6">
+                <div class="hover">
+                    <h2>Barbecues Scallops</h2>
+                </div>
+            </div>
+            <div class="gallery-img gallery-img7">
+                <div class="hover">
+                    <h2>Barbecues Scallops</h2>
+                </div>
+            </div>
+            <div class="gallery-img gallery-img8">
+                <div class="hover">
+                    <h2>Citrus Fruit Salad</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================================================Menu Gallery Section End== =============================-->
+    <!-- ===========================================Footer Sectiont Start============================= -->
+    <section class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <center>
+                    <h1>WELCOME TO SOUL KITCHEN</h1>
+
+                    <p>SOUL KITCHEN, founded in 2022, is dedicated to all those who love to wander far and wide.<br><br>
+                        We'd like to invite you on a culinary adventure, where you’ll explore undiscovered gourmet
+                        experiences.</p>
+                </center>
+            </div>
+            <div class="footer-box">
+                <center>
+                    <h1>VISIT</h1>
+                    <p><ion-icon name="location"></ion-icon> 317 Pacific C Hwy<br>
+                        Huntington, CA 92648</p>
+                    <h1>TALK</h1>
+                    <p><ion-icon name="phone-portrait"></ion-icon>123.456-7</p>
+                    <h1>WRITE</h1>
+                    <p><ion-icon name="mail"></ion-icon> mykitchen1800@gmail.com</p>
+                </center>
+            </div>
+            <div class="footer-box">
+                <center>
+                    <h1>RESERVATIONS</h1>
+                    <a href="http://127.0.0.1:5500/booking.html"><button class="btn">BOOK A TABLE</button></a>
+                    <h1>HOURS</h1>
+                    <p>MONDAY thru FRIDAY<br>
+                        11am - 9pm<br>
+                        <br>
+                        SATURDAY/SUNDAY<br>
+                        10am - 11pm
+                    </p>
+                </center>
+            </div>
+            <div class="footer-box">
+                <center>
+                    <h1>ABOUT</h1>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Reservation Policy</li>
+                        <li>Privacy Policy</li>
+                        <li>Health & Safety</li>
+                    </ul>
+                    <h1>FOLLOW ALONG</h1>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </center>
+            </div>
+        </div>
+    </section>
+    <!-- ===========================================Footer Sectiont End============================= -->
+    <script src="myscript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <!-- Swiper JS -->
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper1", {
+            spaceBetween: 30,
+            effect: "fade",
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+</body>
+
+</html>

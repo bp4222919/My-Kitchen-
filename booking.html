@@ -1,0 +1,249 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="booking.css">
+
+    <link rel="stylesheet" href="madia-qurey.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+        integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!--================================header section start==========================-->
+    <section class="header" id="header">
+        <nav class="navbar navbar_top" id="navbar">
+            <div class="links" id="link">
+                <a href="#"><ion-icon name="location"></ion-icon>317 Pacific C HwyHuntington, CA 92648</a>
+                <a href="#"><ion-icon name="phone-portrait"></ion-icon>1800-99-1800</a>
+                <a href="#"><ion-icon name="mail"></ion-icon>mykitchen1800@gmail.com</a>
+            </div>
+            <div class="icon">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+        </nav>
+        <nav class="navbar" id="navbar_main">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>MY Kitchen</h1>
+                </a>
+            </div>
+            <div class="links" id="links">
+                <a href="http://127.0.0.1:5501/index.html">Home</a>
+                <a href="http://127.0.0.1:5501/about.html">About</a>
+                <a href="http://127.0.0.1:5501/menu.html">Menus</a>
+                <a href="http://127.0.0.1:5501/page.html">Pages</a>
+                <a href="http://127.0.0.1:5501/shop.html">Shop</a>
+                <a href="http://127.0.0.1:5501/contact.html">Contact</a>
+                <div class="icon">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </div>
+            </div>
+            <div class="icon" id="icon">
+                <span class="openbtn" onclick="openNav()" style="z-index: 99999;">&#9776;</span>
+            </div>
+        </nav>
+        <div class="main_header" id="main_header">
+            <div class="main-sidebar" id="main-sidebar"></div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">&times;</a>
+                <a href="http://127.0.0.1:5501/index.html">Home</a>
+                <a href="http://127.0.0.1:5501/about.html">About</a>
+                <a href="http://127.0.0.1:5501/menu.html">Menus</a>
+                <a href="http://127.0.0.1:5501/page.html">Pages</a>
+                <a href="http://127.0.0.1:5501/shop.html">Shop</a>
+                <a href="http://127.0.0.1:5501/contact.html">Contact</a>
+                <ion-icon name="logo-facebook" class="facebook"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-pinterest"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="medical"></ion-icon>
+                <hr class="line">
+                <div class="mySidenav_links">
+                    <a href="#"><ion-icon name="location"></ion-icon>317 Pacific C HwyHuntington, CA 92648</a>
+                    <a href="#"><ion-icon name="phone-portrait"></ion-icon>1800-99-1800</a>
+                    <a href="#"><ion-icon name="mail"></ion-icon>mykitchen1800@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-content1">
+            <div class="back">
+                <center>
+                    <h2 class="heading2">ENJOY AN UNFORGETTABLE EXPERIENCE</h2>
+                    <h1 class="heading3">Book your Table</h1>
+                </center>
+            </div>
+        </div>
+    </section>
+    <!--==============================================header section end===========================-->
+    <!-- ==============================================Booking Table Section Start================= -->
+    <section class="booking">
+        <div class="booking-container">
+            <div class="booking-box booking-box1">
+                <p>We will confirm your reservation within 24 hours via Email.</p>
+                <h4>OPENING TIMES</h4>
+                <p>Monday – Friday<br>
+                    7am – 6pm<br><br>
+
+                    Saturday/Sunday<br>
+                    8am – 6pm</p><br><br>
+            </div>
+            <div class="booking-box booking-box2">
+                <form>
+                    <label>YOUR NAME*</label>
+                    <input type="text">
+                    <label>YOUR EMAIL*</label>
+                    <input type="email">
+                    <label>DATE*</label>
+                    <input type="date">
+                    <label>TIME*</label>
+                    <div class="time">
+                        <input type="radio" name="time" value="17:00">
+                          <label>17:00</label>
+                          <input type="radio" name="time" value="17:30">
+                          <label>17:30</label>
+                          <input type="radio" name="time" value="18:00">
+                          <label>18:00</label>
+                        <input type="radio" name="time" value="18:30">
+                          <label>18:30</label>
+                        <input type="radio" name="time" value="19:00">
+                          <label>19:00</label>
+                        <input type="radio" name="time" value="19:30">
+                          <label>19:30</label>
+                        <input type="radio" name="time" value="20:00">
+                         <label>20:00</label>
+                    </div>
+                    <label>NUMBER OF PEOPLE*</label>
+                    <input type="number">
+                    <label>YOUR MESSAGE*</label>
+                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ==============================================Booking Table Section Start================== -->
+    <!-- ===========================================Footer Sectiont Start============================= -->
+    <section class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <center>
+                    <h1>WELCOME TO SOUL KITCHEN</h1>
+
+                    <p>SOUL KITCHEN, founded in 2022, is dedicated to all those who love to wander far and wide.<br><br>
+                        We'd like to invite you on a culinary adventure, where you’ll explore undiscovered gourmet
+                        experiences.</p>
+                </center>
+            </div>
+            <div class="footer-box">
+                <center>
+                    <h1>VISIT</h1>
+                    <p><ion-icon name="location"></ion-icon> 317 Pacific C Hwy<br>
+                        Huntington, CA 92648</p>
+                    <h1>TALK</h1>
+                    <p><ion-icon name="phone-portrait"></ion-icon>123.456-7</p>
+                    <h1>WRITE</h1>
+                    <p><ion-icon name="mail"></ion-icon> mykitchen1800@gmail.com</p>
+                </center>
+            </div>
+            <div class="footer-box">
+                <center>
+                    <h1>RESERVATIONS</h1>
+                    <a href="http://127.0.0.1:5500/booking.html"><button class="btn">BOOK A TABLE</button></a>
+                    <h1>HOURS</h1>
+                    <p>MONDAY thru FRIDAY<br>
+                        11am - 9pm<br>
+                        <br>
+                        SATURDAY/SUNDAY<br>
+                        10am - 11pm
+                    </p>
+                </center>
+            </div>
+            <div class="footer-box">
+                <center>
+                    <h1>ABOUT</h1>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Reservation Policy</li>
+                        <li>Privacy Policy</li>
+                        <li>Health & Safety</li>
+                    </ul>
+                    <h1>FOLLOW ALONG</h1>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </center>
+            </div>
+        </div>
+    </section>
+    <!-- ===========================================Footer Sectiont End============================= -->
+    <script src="myscript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <!-- Swiper JS -->
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper1", {
+            spaceBetween: 30,
+            effect: "fade",
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+</body>
+
+</html>

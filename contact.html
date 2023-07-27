@@ -1,0 +1,331 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact.com</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="contact.css">
+
+  <link rel="stylesheet" href="madia-qurey.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+    integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+  <!--================================header section start==========================-->
+  <section class="header" id="header">
+    <nav class="navbar navbar_top" id="navbar">
+      <div class="links" id="link">
+        <a href="#"><ion-icon name="location"></ion-icon>317 Pacific
+          C HwyHuntington, CA 92648</a>
+        <a href="#"><ion-icon name="phone-portrait"></ion-icon>1800-99-1800</a>
+        <a href="#"><ion-icon name="mail"></ion-icon>mykitchen1800@gmail.com</a>
+      </div>
+      <div class="icon">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </div>
+    </nav>
+    <nav class="navbar" id="navbar_main">
+      <div class="logo">
+        <a href="index.html">
+          <h1>MY Kitchen</h1>
+        </a>
+      </div>
+      <div class="links" id="links">
+        <a href="http://127.0.0.1:5501/index.html">Home</a>
+        <a href="http://127.0.0.1:5501/about.html">About</a>
+        <a href="http://127.0.0.1:5501/menu.html">Menus</a>
+        <a href="http://127.0.0.1:5501/page.html">Pages</a>
+        <a href="http://127.0.0.1:5501/shop.html">Shop</a>
+        <a href="http://127.0.0.1:5501/contact.html">Contact</a>
+      </div>
+      <div class="icon" id="icon">
+        <span class="openbtn" onclick="openNav()" style="z-index: 99999;">&#9776;</span>
+      </div>
+    </nav>
+    <div class="main_header" id="main_header">
+      <div class="main-sidebar" id="main-sidebar"></div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">&times;</a>
+        <a href="http://127.0.0.1:5501/index.html">Home</a>
+        <a href="http://127.0.0.1:5501/about.html">About</a>
+        <a href="http://127.0.0.1:5501/menu.html">Menus</a>
+        <a href="http://127.0.0.1:5501/page.html">Pages</a>
+        <a href="http://127.0.0.1:5501/shop.html">Shop</a>
+        <a href="http://127.0.0.1:5501/contact.html">Contact</a>
+        <ion-icon name="logo-facebook" class="facebook"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-pinterest"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="medical"></ion-icon>
+        <hr class="line">
+        <div class="mySidenav_links">
+          <a href="#"><ion-icon name="location"></ion-icon>317 Pacific C HwyHuntington, CA 92648</a>
+          <a href="#"><ion-icon name="phone-portrait"></ion-icon>1800-99-1800</a>
+          <a href="#"><ion-icon name="mail"></ion-icon>mykitchen1800@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-content">
+      <div class="box">
+        <center>
+          <h1 class="heading1">VEGAN ASIAN EXPERIENCE</h1>
+          <p>MONDAY thru FRIDAY 5pm – 11pm<br>
+            SATURDAY 10am – 11pm<br>
+            SUNDAY closed</p>
+          <a href="http://127.0.0.1:5500/booking.html"><button class="btn">BOOK A TABLE</button></a>
+        </center>
+      </div>
+      <div class="box box1">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/image-1.jpeg"></div>
+            <div class="swiper-slide"><img src="images/image-27.jpeg"></div>
+            <div class="swiper-slide"><img src="images/image-25.jpeg"></div>
+            <div class="swiper-slide"><img src="images/image-22.jpeg"></div>
+            <div class="swiper-slide"><img src="images/image-24.jpeg"></div>
+          </div>
+          <div class="swiper-button-next mybtn"></div>
+          <div class="swiper-button-prev mybtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--==============================================header section end===========================-->
+<!-- ===============================================Contact Section Start======================= -->
+<section class="contact-page">
+    <div class="contact-page-container">
+        <div class="contact-page-container-box contact-page-container-box2"></div>
+        <div class="contact-page-container-box contact-page-container-box1">
+            <center>
+                <h1 class="heading3">Find Us</h1>
+                <h2 class="heading2">WHERE</h2>
+                <p>317 Pacific C Hwy<br>
+                  Huntington Beach, CA 92648</p>
+                
+                  <a href="https://www.google.com/maps/place/Akanwali/" target="_blank"><button class="btn2"
+                      style="width: 45%;margin: 10px;">VIEW MAP</button></a>
+                  <a href="http://127.0.0.1:5500/booking.html"><button class="btn">BOOK A TABLE</button></a>
+                <br><br>
+                <h2 class="heading2">WHEN</h2>
+                <p>Monday – Friday<br>
+                  7am – 6pm<br>
+                  <br>
+                  Saturday/Sunday<br>
+                  8am – 6pm
+                </p>
+            </center>
+        </div>
+    </div>
+    
+</section>
+<!-- ===============================================Contact Section End========================= -->
+<!-- ===============================================Contact Section Start======================= -->
+<section class="contact-page">
+    <div class="contact-page-container">
+        <div class="contact-page-container-box contact-page-container-box1">
+            <center>
+                <h1 class="heading3">Enquiries</h1>
+                <h2>PR & MARKETING ENQUIRIES</h2>
+                <p>Milo @ 0100 234 567</p>
+                <h2>CATERING ENQUIRIES</h2>
+                <p>Jennifer @ 0100 234 577</p>
+                <h2>RESERVATIONS & PRIVATE DINING</h2>
+                <p>Gwyn @ 0100 234 173</p>
+            </center>
+        </div>
+        <div class="contact-page-container-box contact-page-container-box2"></div>
+    </div>
+    
+</section>
+<!-- ===============================================Contact Section End========================= -->
+<!-- ===============================================Contact Section Start======================= -->
+<section class="contact-page">
+    <div class="contact-page-container">
+        <div class="contact-page-container-box contact-page-container-box2 contact-page-container-box3"></div>
+        <div class="contact-page-container-box contact-page-container-box1" style="padding: 30px 40px;">
+            <center>
+                <h1 class="heading3">Get in touch</h1>
+                <p style="padding:0;">To get in touch fill out the contact form below or call us at 123.456-7.</p>
+            </center>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="number" placeholder="Mobile">
+                <textarea cols="30" rows="10" placeholder="Massage"></textarea>
+                <button type="submit" class="btn2">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+    
+</section>
+<!-- ===============================================Contact Section End========================= -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ===========================================Footer Sectiont Start============================= -->
+  <section class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-box">
+        <center>
+          <h1>WELCOME TO SOUL KITCHEN</h1>
+
+          <p>SOUL KITCHEN, founded in 2022, is dedicated to all those who love to wander far and wide.<br><br>
+            We'd like to invite you on a culinary adventure, where you’ll explore undiscovered gourmet experiences.</p>
+        </center>
+      </div>
+      <div class="footer-box">
+        <center>
+          <h1>VISIT</h1>
+          <p><ion-icon name="location"></ion-icon> 317 Pacific C Hwy<br>
+            Huntington, CA 92648</p>
+          <h1>TALK</h1>
+          <p><ion-icon name="phone-portrait"></ion-icon>123.456-7</p>
+          <h1>WRITE</h1>
+          <p><ion-icon name="mail"></ion-icon> mykitchen1800@gmail.com</p>
+        </center>
+      </div>
+      <div class="footer-box">
+        <center>
+          <h1>RESERVATIONS</h1>
+          <a href="http://127.0.0.1:5500/booking.html"><button class="btn">BOOK A TABLE</button></a>
+          <h1>HOURS</h1>
+          <p>MONDAY thru FRIDAY<br>
+            11am - 9pm<br>
+            <br>
+            SATURDAY/SUNDAY<br>
+            10am - 11pm
+          </p>
+        </center>
+      </div>
+      <div class="footer-box">
+        <center>
+          <h1>ABOUT</h1>
+          <ul>
+            <li>FAQ</li>
+            <li>Reservation Policy</li>
+            <li>Privacy Policy</li>
+            <li>Health & Safety</li>
+          </ul>
+          <h1>FOLLOW ALONG</h1>
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+        </center>
+      </div>
+    </div>
+  </section>
+  <!-- ===========================================Footer Sectiont End============================= -->
+  <script src="myscript.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <!-- Swiper JS -->
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper1", {
+      spaceBetween: 30,
+      effect: "fade",
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+</body>
+
+</html>
